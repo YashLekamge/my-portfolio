@@ -30,7 +30,7 @@ const ParticlesBackground = () => {
         },
       },
       particles: {
-        color: { value: "#10b981" }, // Emerald 500 color
+        color: { value: "#10b981" }, 
         links: {
           color: "#10b981",
           distance: 150,

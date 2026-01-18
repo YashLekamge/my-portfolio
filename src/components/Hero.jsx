@@ -7,16 +7,16 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-transparent pt-20">
       
-      {/* 1. Photo Section (මුල් ප්‍රමාණයෙන්ම - Large & Prominent) */}
+     
       <Reveal width="fit-content">
         <div className="relative mb-10">
-          {/* කැරකෙන ආලෝක ධාරාව */}
+          
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
             className="absolute -inset-4 rounded-full bg-[conic-gradient(from_0deg,transparent_0deg,transparent_300deg,#10b981_360deg)] opacity-30 blur-md"
           />
-          {/* ෆොටෝ එක (w-40 h-40 md:w-52 md:h-52 ලෙස විශාලව තබා ඇත) */}
+         
           <div className="relative w-40 h-40 md:w-52 md:h-52 bg-slate-900 rounded-full p-1 shadow-2xl overflow-hidden border border-slate-800">
             <img 
               src="/profile.jpeg" 
@@ -42,7 +42,7 @@ const Hero = () => {
             />
           </div>
           
-          {/* නම - වඩාත් පිළිවෙල සහ කුඩා ප්‍රමාණයකින් (text-4xl md:text-6xl) */}
+          
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
             Yashara <span className="text-emerald-400">Lekamge</span>
           </h1>
