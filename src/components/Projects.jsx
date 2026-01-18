@@ -27,7 +27,7 @@ const Projects = () => {
       icon: <Layout className="w-5 h-5 text-emerald-400" />,
       desc: "A modern, responsive portfolio website built using React.js and Tailwind CSS. Designed to showcase my technical expertise in Quality Assurance and Frontend development with a clean, professional UI.",
       tech: ["React.js", "Tailwind CSS", "Vite", "Lucide Icons"],
-      link: "https://github.com/YashLekamge/my-portfolio", // Update with live link once deployed
+      link: "https://github.com/YashLekamge/my-portfolio", 
       github: "https://github.com/YashLekamge/my-portfolio"
     }
   ];
