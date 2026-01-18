@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../assets/profile.jpeg';
+
 
 const Hero = () => {
   return (
@@ -34,9 +34,9 @@ const Hero = () => {
           <div className="relative group">
             <div className="absolute -inset-1 bg-emerald-500 rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
             <img 
-              src={profileImg} 
-              alt="Yashara Lekamge" 
-              className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-slate-900 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
+                 src="/profile.jpeg" 
+                 alt="Yashara Lekamge" 
+                className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-slate-900 shadow-2xl"
             />
             <div className="absolute bottom-6 right-6 bg-slate-900 border border-emerald-500 p-2 rounded-full shadow-lg">
                <div className="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
