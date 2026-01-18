@@ -1,6 +1,7 @@
 import React from 'react';
 import { ExternalLink, Github, FileText, Code2, Layout } from 'lucide-react';
 import { Reveal } from './Reveal'; 
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   const myProjects = [
@@ -33,7 +34,6 @@ const Projects = () => {
     }
   ];
 
-  
   return (
     <section id="projects" className="py-24 bg-slate-900/30">
       <div className="max-w-6xl mx-auto px-6">
@@ -47,10 +47,20 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {myProjects.map((p, i) => (
             <Reveal key={i} width="100%">
-              <div className="group flex flex-col h-full bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/50 transition-all duration-300">
+             
+              <motion.div 
+                whileHover={{ 
+                  y: -12, 
+                  scale: 1.02, 
+                  boxShadow: "0px 10px 40px rgba(52, 211, 153, 0.15)", 
+                  borderColor: "rgba(52, 211, 153, 0.5)" 
+                }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="group flex flex-col h-full bg-slate-900 border border-slate-800 rounded-2xl p-6 transition-all duration-300"
+              >
                 
                 <div className="flex items-center justify-between mb-6">
-                  <div className="p-2 bg-slate-800 rounded-lg">
+                  <div className="p-2 bg-slate-800 rounded-lg group-hover:bg-emerald-500/10 transition-colors">
                     {p.icon}
                   </div>
                   <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest bg-emerald-500/10 px-2 py-1 rounded">
@@ -68,7 +78,7 @@ const Projects = () => {
 
                 <div className="flex flex-wrap gap-2 mb-8">
                   {p.tech.map(t => (
-                    <span key={t} className="text-[10px] text-slate-500 bg-slate-950 border border-slate-800 px-2 py-1 rounded">
+                    <span key={t} className="text-[10px] text-slate-500 bg-slate-950 border border-slate-800 px-2 py-1 rounded group-hover:border-emerald-500/30">
                       {t}
                     </span>
                   ))}
@@ -94,7 +104,7 @@ const Projects = () => {
                     </a>
                   )}
                 </div>
-              </div>
+              </motion.div>
             </Reveal>
           ))}
         </div>

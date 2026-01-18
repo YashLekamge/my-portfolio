@@ -1,18 +1,32 @@
 import React from 'react';
 import { Reveal } from './Reveal';
-import profileImg from '../assets/profile.jpeg';
+import Typewriter from 'typewriter-effect'; // 1. Typewriter එක import කළා
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 bg-slate-950 pt-20">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <section className="min-h-screen flex items-center justify-center px-6 bg-slate-950 pt-20 overflow-hidden">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 text-slate-300">
         
-        
+        {/* වම් පැත්ත - විස්තර */}
         <div className="flex-1 text-center md:text-left order-2 md:order-1">
           <Reveal width="100%">
-            <p className="text-emerald-400 font-mono tracking-widest uppercase text-sm mb-4">
-              Software Engineering Undergraduate @ NSBM
-            </p>
+            {/* Typewriter පේළිය */}
+            <div className="text-emerald-400 font-mono tracking-widest uppercase text-sm mb-4 h-6">
+              <Typewriter
+                options={{
+                  strings: [
+                    'Software Engineering Undergraduate @ NSBM',
+                    'Software QA Intern',
+                    'Frontend Enthusiast',
+                    'Automation Testing Learner'
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 60,
+                  deleteSpeed: 40,
+                }}
+              />
+            </div>
             
             <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
               Hi, I am <span className="text-emerald-400 drop-shadow-[0_0_15px_rgba(52,211,153,0.3)]">Yashara Lekamge</span>
@@ -26,7 +40,7 @@ const Hero = () => {
 
           <Reveal width="100%">
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              
+              {/* View My Work Button */}
               <a 
                 href="#projects" 
                 className="px-8 py-3 bg-emerald-500 text-slate-950 rounded-lg font-bold hover:bg-emerald-400 transition-all shadow-lg shadow-emerald-500/20 text-center"
@@ -34,7 +48,7 @@ const Hero = () => {
                 View My Work
               </a>
 
-             
+              {/* Download CV Button */}
               <a 
                 href="/YASHARA_LEKAMGE_RESUME.pdf" 
                 download="YASHARA_LEKAMGE_RESUME.pdf" 
@@ -48,21 +62,21 @@ const Hero = () => {
                   <path d="M12 18v-6"/>
                   <path d="m9 15 3 3 3-3"/>
                 </svg>
-                Download CV
+                Download RESUME
               </a>
             </div>
           </Reveal>
         </div>
 
-        
+       
         <div className="flex-1 flex justify-center order-1 md:order-2">
           <Reveal width="fit-content">
             <div className="relative group">
               <div className="absolute -inset-1 bg-emerald-500 rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
               <img 
-                src={profileImg} 
-                alt="Yashara Lekamge" 
-                className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-slate-900 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
+                 src="/profile.jpeg"  
+                 alt="Yashara Lekamge" 
+                 className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-slate-900 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
               />
               <div className="absolute bottom-6 right-6 bg-slate-900 border border-emerald-500 p-2 rounded-full shadow-lg">
                  <div className="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
