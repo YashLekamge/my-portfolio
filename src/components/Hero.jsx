@@ -1,91 +1,79 @@
 import React from 'react';
 import { Reveal } from './Reveal';
-import Typewriter from 'typewriter-effect'; // 1. Typewriter එක import කළා
+import Typewriter from 'typewriter-effect';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 bg-slate-950 pt-20 overflow-hidden">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 text-slate-300">
-        
-        {/* වම් පැත්ත - විස්තර */}
-        <div className="flex-1 text-center md:text-left order-2 md:order-1">
-          <Reveal width="100%">
-            {/* Typewriter පේළිය */}
-            <div className="text-emerald-400 font-mono tracking-widest uppercase text-sm mb-4 h-6">
-              <Typewriter
-                options={{
-                  strings: [
-                    'Software Engineering Undergraduate @ NSBM',
-                    'Software QA Intern',
-                    'Frontend Enthusiast',
-                    'Automation Testing Learner'
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  delay: 60,
-                  deleteSpeed: 40,
-                }}
-              />
-            </div>
-            
-            <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
-              Hi, I am <span className="text-emerald-400 drop-shadow-[0_0_15px_rgba(52,211,153,0.3)]">Yashara Lekamge</span>
-            </h1>
-            
-            <p className="text-lg text-slate-400 max-w-xl mb-10 leading-relaxed">
-              I specialize in <span className="text-white font-medium">Quality Assurance</span> and <span className="text-white font-medium">Frontend Development</span>. 
-              Ensuring high-quality software through automated logic and manual precision.
-            </p>
-          </Reveal>
-
-          <Reveal width="100%">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              {/* View My Work Button */}
-              <a 
-                href="#projects" 
-                className="px-8 py-3 bg-emerald-500 text-slate-950 rounded-lg font-bold hover:bg-emerald-400 transition-all shadow-lg shadow-emerald-500/20 text-center"
-              >
-                View My Work
-              </a>
-
-              {/* Download CV Button */}
-              <a 
-                href="/YASHARA_LEKAMGE_RESUME.pdf" 
-                download="YASHARA_LEKAMGE_RESUME.pdf" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-8 py-3 border border-emerald-500 text-emerald-400 rounded-lg font-bold hover:bg-emerald-500/10 transition-all text-center"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-down">
-                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
-                  <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
-                  <path d="M12 18v-6"/>
-                  <path d="m9 15 3 3 3-3"/>
-                </svg>
-                Download RESUME
-              </a>
-            </div>
-          </Reveal>
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-transparent pt-20">
+      
+      {/* 1. Photo Section (මුල් ප්‍රමාණයෙන්ම - Large & Prominent) */}
+      <Reveal width="fit-content">
+        <div className="relative mb-10">
+          {/* කැරකෙන ආලෝක ධාරාව */}
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+            className="absolute -inset-4 rounded-full bg-[conic-gradient(from_0deg,transparent_0deg,transparent_300deg,#10b981_360deg)] opacity-30 blur-md"
+          />
+          {/* ෆොටෝ එක (w-40 h-40 md:w-52 md:h-52 ලෙස විශාලව තබා ඇත) */}
+          <div className="relative w-40 h-40 md:w-52 md:h-52 bg-slate-900 rounded-full p-1 shadow-2xl overflow-hidden border border-slate-800">
+            <img 
+              src="/profile.jpeg" 
+              alt="Yashara Lekamge" 
+              className="w-full h-full object-cover rounded-full"
+            />
+          </div>
         </div>
+      </Reveal>
 
-       
-        <div className="flex-1 flex justify-center order-1 md:order-2">
-          <Reveal width="fit-content">
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-emerald-500 rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-              <img 
-                 src="/profile.jpeg"  
-                 alt="Yashara Lekamge" 
-                 className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-slate-900 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
-              />
-              <div className="absolute bottom-6 right-6 bg-slate-900 border border-emerald-500 p-2 rounded-full shadow-lg">
-                 <div className="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
-              </div>
-            </div>
-          </Reveal>
-        </div>
+      {/* 2. Content Section */}
+      <div className="max-w-3xl mx-auto">
+        <Reveal width="100%">
+          {/* Typewriter text */}
+          <div className="text-emerald-400 font-mono tracking-[0.2em] uppercase text-xs mb-4 h-6">
+            <Typewriter
+              options={{
+                strings: ['Software Engineering Undergraduate', 'Software QA Intern', 'Frontend Enthusiast'],
+                autoStart: true, 
+                loop: true, 
+                delay: 50,
+              }}
+            />
+          </div>
+          
+          {/* නම - වඩාත් පිළිවෙල සහ කුඩා ප්‍රමාණයකින් (text-4xl md:text-6xl) */}
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+            Yashara <span className="text-emerald-400">Lekamge</span>
+          </h1>
+          
+          <p className="text-slate-400 text-lg md:text-xl mb-12 leading-relaxed max-w-2xl mx-auto font-light">
+            Bridging the gap between <span className="text-white font-medium">robust testing</span> and 
+            <span className="text-white font-medium"> elegant frontend design</span>.
+          </p>
+        </Reveal>
 
+        {/* 3. Buttons */}
+        <Reveal width="100%">
+          <div className="flex flex-wrap gap-6 justify-center">
+            <a href="#projects" className="px-10 py-4 bg-emerald-500 text-slate-950 rounded-full font-bold hover:bg-emerald-400 transition-all shadow-lg shadow-emerald-500/20 text-sm">
+              View My Work
+            </a>
+            <a href="/YASHARA_LEKAMGE_RESUME.pdf" download className="px-10 py-4 border border-slate-700 text-white rounded-full font-bold hover:bg-slate-800 transition-all text-sm">
+              Download RESUME
+            </a>
+          </div>
+        </Reveal>
       </div>
+
+      {/* 4. Animated Scroll Indicator */}
+      <motion.div 
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+        className="absolute bottom-10 text-slate-600 text-[10px] uppercase tracking-[0.3em]"
+      >
+        Scroll Down
+      </motion.div>
     </section>
   );
 };
