@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, FileText, Code2, Layout } from 'lucide-react';
+import { ExternalLink, Github, FileText, Code2, Gem } from 'lucide-react';
 import { Reveal } from './Reveal'; 
 import { motion } from 'framer-motion';
 
@@ -24,13 +24,13 @@ const Projects = () => {
       github: "https://github.com/YashLekamge/QA-Portfolio.git"
     },
     {
-      title: "Professional QA Portfolio",
-      category: "Frontend Development",
-      icon: <Layout className="w-5 h-5 text-emerald-400" />,
-      desc: "A modern, responsive portfolio website built using React.js and Tailwind CSS. Designed to showcase my technical expertise in Quality Assurance and Frontend development.",
-      tech: ["React.js", "Tailwind CSS", "Vite", "Lucide Icons"],
-      link: "https://yashara-lekamge.vercel.app",
-      github: "https://github.com/YashLekamge/my-portfolio"
+      title: "RoyalBidz — Jewelry Auction Platform",
+      category: "Full Stack Development",
+      icon: <Gem className="w-5 h-5 text-emerald-400" />,
+      desc: "A real-time auction platform featuring live bidding via SignalR, secure JWT authentication, and automated email workflows. Includes comprehensive role-based dashboards for Admins, Sellers, and Buyers.",
+      tech: [".NET 8", "React", "MySQL", "SignalR", "EF Core", "JWT"],
+      link: "https://github.com/induwara-dissanayake/RoyalBidz.git",
+      github: "https://github.com/induwara-dissanayake/RoyalBidz.git"
     }
   ];
 
