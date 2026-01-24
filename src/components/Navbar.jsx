@@ -7,7 +7,7 @@ const Navbar = () => {
        
         
         <div className="flex space-x-8 text-sm font-medium">
-          {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
+          {['About', 'Skills', 'Projects','Certifications', 'Contact'].map((item) => (
             <a 
               key={item} 
               href={`#${item.toLowerCase()}`} 

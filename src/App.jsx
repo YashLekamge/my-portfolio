@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import ParticlesBackground from "./components/ParticlesBackground";
 // 1. Vercel Analytics import 
@@ -25,6 +26,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Certifications />
         <Contact />
         
         <footer className="py-10 text-center text-slate-600 border-t border-slate-900 bg-transparent">
