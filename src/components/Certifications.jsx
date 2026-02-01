@@ -16,6 +16,35 @@ const Certifications = () => {
       issuer: "CODL,University Of Moratuwa,Sri Lanka",
       date: "2026",
       link: "https://drive.google.com/file/d/1R5cjFAef8y9tZvgXHS7pp1eitvsBO1yX/view?usp=sharing", 
+    },
+    {
+      title: "Introduction to Cypress",
+      issuer: "Test Automation University",
+      date: "2026",
+      link: "https://drive.google.com/file/d/1R5cjFAef8y9tZvgXHS7pp1eitvsBO1yX/view?usp=sharing", 
+    },
+    {
+      title: "Cypress With TypeScript",
+      issuer: "Test Automation University",
+      date: "2026",
+      link: "https://drive.google.com/file/d/1byIq-BB0D4OjVYw6spQtuLmj1s9V9pNq/view?usp=sharing", 
+    },
+    {
+      title: "Acceptance Test Driven Development for the Front End",
+      issuer: "Test Automation University",
+      date: "2026",
+      link: "https://drive.google.com/file/d/1TJSniaWukkeDXd3n-nKSBjYzhC7W2FvR/view?usp=sharing", 
+    },
+    {
+      title: "Test Automation for Accessibility",
+      issuer: "Test Automation University",
+      date: "2026",
+      link: "https://drive.google.com/file/d/1xgbxc7RMuJy8p8Ly4Y0Kcs0JhHzFeYYP/view?usp=sharing", 
+    },{
+      title: "Web Element Locator Strategies",
+      issuer: "Test Automation University",
+      date: "2026",
+      link: "https://drive.google.com/file/d/1UXNlx2bOjpfKeiy8Ii_kO3bjZxoGfISV/view?usp=sharing", 
     }
   ];
 
