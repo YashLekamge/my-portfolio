@@ -11,23 +11,23 @@ const Certifications = () => {
   const myCertifications = [
    
     {
-      title: "Python for Beginners",
-      issuer: "CODL,University Of Moratuwa,Sri Lanka", 
-      date: "2026",
-      link: "https://drive.google.com/file/d/1g69Rl1hm1Ahvv3AEY3GFPrKw_qzcKhO1/view?usp=sharing", 
-    },
-   
-    {
-        title: "Web Design for Beginners",
-        issuer: "CODL,University Of Moratuwa,Sri Lanka",
+        title: "Software Testing Assistance with GitHub Copilot AI",
+        issuer: "LinkedIn Learning",
         date: "2026",
-        link: "https://drive.google.com/file/d/1R5cjFAef8y9tZvgXHS7pp1eitvsBO1yX/view?usp=sharing", 
+        link: "https://drive.google.com/file/d/1k0RiwlBrHY-nTLtgqBYCtuCjGfA0FQXU/view?usp=sharing", 
+
       },
       {
-        title: "Introduction to Cypress",
+        title: "Advanced Playwright",
         issuer: "Test Automation University",
         date: "2026",
-        link: "https://drive.google.com/file/d/1R5cjFAef8y9tZvgXHS7pp1eitvsBO1yX/view?usp=sharing", 
+        link: "https://drive.google.com/file/d/1qcRJ-mBJkowjy912RYYilbdNSrt9gm_v/view?usp=sharing", 
+      },
+      {
+        title: "Introduction to Playwright",
+        issuer: "Test Automation University",
+        date: "2026",
+        link: "https://drive.google.com/file/d/1jkjOLOVzJxcZmUpjUcfNNIdd-vFfGyLa/view?usp=sharing", 
       },
       {
         title: "Cypress With TypeScript",
@@ -35,11 +35,17 @@ const Certifications = () => {
         date: "2026",
         link: "https://drive.google.com/file/d/1byIq-BB0D4OjVYw6spQtuLmj1s9V9pNq/view?usp=sharing", 
       },
-      {
+       {
         title: "Acceptance Test Driven Development for the Front End",
         issuer: "Test Automation University",
         date: "2026",
         link: "https://drive.google.com/file/d/1TJSniaWukkeDXd3n-nKSBjYzhC7W2FvR/view?usp=sharing", 
+      },
+      {
+        title: "Introduction to Cypress",
+        issuer: "Test Automation University",
+        date: "2026",
+        link: "https://drive.google.com/file/d/1R5cjFAef8y9tZvgXHS7pp1eitvsBO1yX/view?usp=sharing", 
       },
       {
         title: "Test Automation for Accessibility",
@@ -54,23 +60,40 @@ const Certifications = () => {
         link: "https://drive.google.com/file/d/1UXNlx2bOjpfKeiy8Ii_kO3bjZxoGfISV/view?usp=sharing", 
       },
       {
-        title: "Introduction to Playwright",
-        issuer: "Test Automation University",
+        title: "DOCKER 101 Completion",
+        issuer: "DOCKER",
         date: "2026",
-        link: "https://drive.google.com/file/d/1jkjOLOVzJxcZmUpjUcfNNIdd-vFfGyLa/view?usp=sharing", 
-      },
-      {
-        title: "Advanced Playwright",
-        issuer: "Test Automation University",
-        date: "2026",
-        link: "https://drive.google.com/file/d/1qcRJ-mBJkowjy912RYYilbdNSrt9gm_v/view?usp=sharing", 
+        link: "https://lnkd.in/gww7spkz", 
       },
       {
         title: "API Learning 101 Completion",
         issuer: "Postman API",
         date: "2026",
         link: "https://github.com/nisalgunawardhana/api-learning-101/pull/103", 
+      },
+      
+    
+    {
+      title: "Python for Beginners",
+      issuer: "CODL,University Of Moratuwa,Sri Lanka", 
+      date: "2026",
+      link: "https://drive.google.com/file/d/1g69Rl1hm1Ahvv3AEY3GFPrKw_qzcKhO1/view?usp=sharing", 
+    },
+    
+   
+    {
+        title: "Web Design for Beginners",
+        issuer: "CODL,University Of Moratuwa,Sri Lanka",
+        date: "2026",
+        link: "https://drive.google.com/file/d/1R5cjFAef8y9tZvgXHS7pp1eitvsBO1yX/view?usp=sharing", 
       }
+      
+      
+      
+      
+      
+      
+      
   ];
 
   
