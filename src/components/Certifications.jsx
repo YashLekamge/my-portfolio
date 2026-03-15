@@ -60,6 +60,18 @@ const Certifications = () => {
         link: "https://drive.google.com/file/d/1UXNlx2bOjpfKeiy8Ii_kO3bjZxoGfISV/view?usp=sharing", 
       },
       {
+        title: "Practical GitHub Actions",
+        issuer: "LinkedIn Learning",
+        date: "2026",
+        link: "https://drive.google.com/file/d/18l6xvnbm1d2q3slgAxnjFkoPTNICoslZ/view?usp=sharing", 
+      },
+      {
+        title: "Scripting for Testers",
+        issuer: "LinkedIn Learning",
+        date: "2026",
+        link: "https://drive.google.com/file/d/1vt55nXQ5l3UK8g9lBpQH0_eOPHXYE4HT/view?usp=sharing", 
+      },
+      {
         title: "DOCKER 101 Completion",
         issuer: "DOCKER",
         date: "2026",
