@@ -60,6 +60,12 @@ const Certifications = () => {
         link: "https://drive.google.com/file/d/1UXNlx2bOjpfKeiy8Ii_kO3bjZxoGfISV/view?usp=sharing", 
       },
       {
+        title: "International Software Testing Qualifications Board (ISTQB) 4.0+ Foundation Cert Prep",
+        issuer: "LinkedIn Learning",
+        date: "2026",
+        link: "https://drive.google.com/file/d/1StAp2Q2zeW7I6gUk7Zfkrj3hG3fz55uV/view?usp=sharing", 
+      },
+      {
         title: "Practical GitHub Actions",
         issuer: "LinkedIn Learning",
         date: "2026",
