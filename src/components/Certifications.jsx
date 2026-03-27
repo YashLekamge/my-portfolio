@@ -35,6 +35,12 @@ const Certifications = () => {
         date: "2026",
         link: "https://drive.google.com/file/d/1byIq-BB0D4OjVYw6spQtuLmj1s9V9pNq/view?usp=sharing", 
       },
+      {
+        title: "AI for Software Testers: Apply AI Tools and Techniques to the Software Testing Life Cycle",
+        issuer: "LinkedIn Learning",
+        date: "2026",
+        link: "https://drive.google.com/file/d/1lh4NUZ34V137qlFuKj_aszRSUo7jQWlF/view?usp=sharing", 
+      },
        {
         title: "Acceptance Test Driven Development for the Front End",
         issuer: "Test Automation University",
